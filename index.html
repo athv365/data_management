@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Management</title>
+    <script>
+        // JavaScript code from the previous example goes here
+    </script>
+    <style>
+        /* CSS styles from the previous example goes here */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Google Sheets Data Management</h1>
+        <nav>
+            <a href="view.html">View Data</a>
+        </nav>
+        <input type="text" id="search-input" placeholder="Search..." oninput="searchData()">
+        <table border="1" id="data-table">
+            <thead>
+                <tr>
+                    <th>Sl No</th>
+                    <th>Name</th>
+                    <th>FTTH</th>
+                    <th>Mobile No</th>
+                    <th>Port No</th>
+                    <th>Connection</th>
+                    <th>Panchayath</th>
+                    <th>Area</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <h2>Add/Edit Data</h2>
+        <input type="text" id="slno" placeholder="Sl No" required>
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="text" id="ftth" placeholder="FTTH" required>
+        <input type="text" id="mobile" placeholder="Mobile No" required>
+        <input type="text" id="port" placeholder="Port No" required>
+        <input type="text" id="connection" placeholder="Connection" required>
+        <input type="text" id="panchayath" placeholder="Panchayath" required>
+        <input type="text" id="area" placeholder="Area" required>
+        <button onclick="insertData()">Add Data</button>
+        <button onclick="saveData()">Save Changes</button>
+    </div>
+</body>
+</html>
